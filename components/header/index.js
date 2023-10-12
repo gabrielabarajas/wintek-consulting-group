@@ -41,61 +41,22 @@ const Header = (props) => {
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="/">Inicio</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} href="/home3">Home style 3</Link></li>
-                                            </ul>
                                         </li>
                                         <li><Link onClick={ClickHandler} href="/about">ADN Wintek</Link></li>
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="/">Avancemos juntos</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} href="/service-single/Strategy-and-Planning">Service Single</Link></li>
-                                            </ul>
                                         </li>
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="/blog">Blog</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} href="/blog">Blog right sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/blog-left-sidebar">Blog left sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} href="/blog-fullwidth">Blog fullwidth</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} href="/">Blog details</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} href="/blog-single/8-Mistakes-First-Time-Founders-Make-When-Starting-a-Business">Blog details right sidebar</Link>
-                                                        </li>
-                                                        <li><Link onClick={ClickHandler} href="/blog-single-left-sidebar/8-Mistakes-First-Time-Founders-Make-When-Starting-a-Business">Blog details left
-                                                            sidebar</Link></li>
-                                                        <li><Link onClick={ClickHandler} href="/blog-single-fullwidth/8-Mistakes-First-Time-Founders-Make-When-Starting-a-Business">Blog details
-                                                            fullwidth</Link></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
                                         </li>
                                         <li><Link onClick={ClickHandler} href="/contact">Contacto</Link></li>
                                     </ul>
-
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="close-form">
                                         <Link onClick={ClickHandler} className="theme-btn" href="/contact">Solicita Información</Link>
-                                    </div>
-                                    <div className="header-search-form-wrapper">
-                                        <div className="cart-search-contact">
-                                            <button onClick={() => setMenuState(!menuActive)} className="search-toggle-btn"><i
-                                                className={`ti-search ${menuActive ? "ti-close" : "ti-search"}`}></i></button>
-                                            <div className={`header-search-form ${menuActive ? "header-search-content-toggle" : ""}`}>
-                                                <form onSubmit={SubmitHandler}>
-                                                    <div>
-                                                        <input type="text" className="form-control"
-                                                            placeholder="Search here..." />
-                                                        <button type="submit"><i
-                                                            className="fi flaticon-magnifiying-glass"></i></button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

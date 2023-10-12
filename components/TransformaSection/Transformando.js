@@ -2,12 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import Services from '../../api/service'
 import Image from 'next/image'
+import styles from '../../styles/Home.module.css'
 
 const Transformando = (props) => {
     const ClickHandler = () =>{
         window.scrollTo(10, 0);
      }
-
 
     return(
         <section className="wpo-service-section section-padding">
@@ -15,12 +15,11 @@ const Transformando = (props) => {
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <span>Our Services</span>
-                            <h2>Explore Our Services</h2>
+                            <h2>Transformando empresas</h2>
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className= {`row ${styles.transfContainer}`}>
                     {Services.map((service, sitem) => (
                         <div className="col-lg-4 col-md-6 col-12" key={sitem}>
                             <div className="wpo-service-item">
