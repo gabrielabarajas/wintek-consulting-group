@@ -14,9 +14,15 @@ const Header = (props) => {
         e.preventDefault()
     }
 
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
+    const ClickHandler = (e) => {
+        console.log(e);
+        window.scrollTo(200, 0);
     }
+    
+    const scrollTo = (selector) => {
+        const { offsetTop } = document.querySelector(selector);
+        window.scrollTo({ top: offsetTop - 115, behavior: 'smooth' });
+      }
 
     return (
         <header id="header" className={props.hclass}>
@@ -43,7 +49,7 @@ const Header = (props) => {
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="/">Inicio</Link>
                                         </li>
-                                        <li><Link onClick={ClickHandler} href="/" >ADN Wintek</Link></li>
+                                        <li><Nav.Link onClick={() => scrollTo('#adnSec')} >ADN Wintek</Nav.Link></li>
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="/">Avancemos juntos</Link>
                                         </li>

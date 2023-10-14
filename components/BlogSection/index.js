@@ -1,9 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import blogs from '../../api/blogs'
 import Image from 'next/image'
 
-const BlogSection = (props) => {
+const BlogSection = ({articles}) => {
     
     const ClickHandler = () =>{
         window.scrollTo(10, 0);
@@ -22,24 +21,19 @@ const BlogSection = (props) => {
                 </div>
                 <div className="wpo-blog-items">
                     <div className="row">
-                         {blogs.map((blog, Bitem) => (
-                            <div className="col col-lg-4 col-md-6 col-12"  key={Bitem}>
+                         {articles.map((blog, index) => (
+                            <div className="col col-lg-4 col-md-6 col-12"  key={index}>
                                 <div className="wpo-blog-item">
                                     <div className="wpo-blog-img">
-                                        <Image src={blog.screens} alt=""/>
+                                        <img src={blog.imageUrl} width={100} height={100}
+                                        />
                                     </div>
                                     <div className="wpo-blog-content">
                                         <div className="wpo-blog-content-top">
-                                            <div className="wpo-blog-thumb">
-                                                <span>{blog.tag}</span>
-                                            </div>
                                             <h2><Link onClick={ClickHandler} href="/blog-single/[slug]" as={`/blog-single/${blog.slug}`}>{blog.title}</Link></h2>
                                         </div>
                                         <div className="wpo-blog-content-btm">
                                             <div className="wpo-blog-content-btm-left">
-                                                <div className="wpo-blog-content-btm-left-img">
-                                                    <Image src={blog.authorImg} alt=""/>
-                                                </div>
                                                 <div className="wpo-blog-content-btm-left-text">
                                                     <h4><Link onClick={ClickHandler} href="/blog-single/[slug]" as={`/blog-single/${blog.slug}`}>{blog.author}</Link></h4>
                                                     <span>{blog.authorTitle}</span>

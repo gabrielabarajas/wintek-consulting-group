@@ -4,14 +4,15 @@ import Avancemos from '../components/AvancemosSection/Avancemos';
 import Transformando from '../components/TransformaSection/Transformando';
 import Adn from '../components/AdnSection/AdnSection'
 import Solicita from '../components/SolicitaSection/Solicita';
-
+import { getArticles } from '../utils/services';
 import BlogSection from '../components/BlogSection'
 import Footer from '../components/footer/Footer'
 import Scrollbar from '../components/scrollbar/scrollbar'
 
 
 
-const HomePage = () => {
+const HomePage = ({articles}) => {
+    console.log(articles);
     return (
         <Fragment>
             <Navbar hclass={'topbar-none'} />
@@ -19,10 +20,17 @@ const HomePage = () => {
             <Adn/>
             <Avancemos/>
             <Solicita/>
-            <BlogSection/>
+            <BlogSection articles={articles}/>
             <Footer/>
             <Scrollbar/>
         </Fragment>
     )
 };
 export default HomePage;
+
+export async function getStaticProps() {
+    const articles = await getArticles(2);
+    return {
+      props: { articles },
+    };
+}
