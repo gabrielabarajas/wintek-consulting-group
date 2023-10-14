@@ -7,57 +7,12 @@ import cnt3 from '/public/images/icon/app.svg'
 import Image from 'next/image';
 
 const Solicita = () => {
-
     return(
         <section className="wpo-contact-pg-section section-padding">
             <div className="container">
+            <h1>Comencemos a trabajar en tu proyecto</h1>
                 <div className="row">
                     <div className="col col-lg-10 offset-lg-1">
-                        <div className="office-info">
-                            <div className="row">
-                                <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                    <div className="office-info-item">
-                                        <div className="office-info-icon">
-                                            <div className="icon">
-                                                <Image src={cnt1} alt=""/>
-                                            </div>
-                                        </div>
-                                        <div className="office-info-text">
-                                            <h2>Address</h2>
-                                            <p>7 Green Lake Street Crawfordsville, IN 47933</p>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                    <div className="office-info-item">
-                                        <div className="office-info-icon">
-                                            <div className="icon">
-                                                <Image src={cnt2} alt=""/>
-                                            </div>
-                                        </div>
-                                        <div className="office-info-text">
-                                            <h2>Email Us</h2>
-                                            <p>consultar@gmail.com</p>
-                                            <p>helloyou@gmail.com</p>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
-                                    <div className="office-info-item">
-                                        <div className="office-info-icon">
-                                            <div className="icon">
-                                                <Image src={cnt3} alt=""/>
-                                            </div>
-                                        </div>
-                                        <div className="office-info-text">
-                                            <h2>Call Now</h2>
-                                            <p>+1 800 123 456 789</p>
-                                            <p>+1 800 123 654 987</p>
-                                        </div>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
                         <div className="wpo-contact-title">
                             <h2>Have Any Question?</h2>
                             <p>It is a long established fact that a reader will be distracted

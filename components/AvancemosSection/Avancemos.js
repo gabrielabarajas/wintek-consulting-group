@@ -11,13 +11,11 @@ import hero from '/public/images/slider/right-img2.png'
 import Image from "next/image";
 
 
-
-
 const Avancemos = () => {
-
     return (
         <section className="wpo-hero-section-1 wpo-hero-section-2" >
             <div className="container">
+            <h1>Avancemos Juntos</h1>
                 <div className="row">
                     <div className="col col-xs-6 col-lg-6">
                         <div className="wpo-hero-section-text">

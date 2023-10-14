@@ -13,8 +13,9 @@ const Adn = (props) => {
         window.scrollTo(10, 0);
      }
     return(
-        <section className={`wpo-about-section ${props.abClass}`}>
+        <section id="adnSec" className={`wpo-about-section ${props.abClass}`}>
             <div className="container">
+            <h1>ADN Wintek</h1>
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-12">
                         <div className="wpo-about-wrap">

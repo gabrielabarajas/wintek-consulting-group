@@ -9,15 +9,14 @@ const BlogSection = (props) => {
         window.scrollTo(10, 0);
      }
 
-
     return(
         <section className="wpo-blog-section section-padding">
             <div className="container">
+            <h1>Blog</h1>
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <span>blog</span>
-                            <h2>Our blog Packages</h2>
+                            <h2>Compartimos conocimiento</h2>
                         </div>
                     </div>
                 </div>

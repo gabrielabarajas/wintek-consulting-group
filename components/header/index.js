@@ -4,6 +4,7 @@ import Link from 'next/link'
 import MobileMenu from '../../components/MobileMenu'
 import HeaderTopbar from '../HeaderTopbar'
 import Image from 'next/image'
+import Nav from 'react-bootstrap/Nav';
 
 
 const Header = (props) => {
@@ -42,14 +43,14 @@ const Header = (props) => {
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="/">Inicio</Link>
                                         </li>
-                                        <li><Link onClick={ClickHandler} href="/about">ADN Wintek</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/" >ADN Wintek</Link></li>
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} href="/">Avancemos juntos</Link>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} href="/blog">Blog</Link>
+                                            <Link onClick={ClickHandler} href="/">Blog</Link>
                                         </li>
-                                        <li><Link onClick={ClickHandler} href="/contact">Contacto</Link></li>
+                                        <li><Link onClick={ClickHandler} href="/">Contacto</Link></li>
                                     </ul>
                                 </div>
                             </div>
