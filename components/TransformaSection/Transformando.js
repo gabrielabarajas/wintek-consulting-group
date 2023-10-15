@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Services from '../../api/service'
 import Image from 'next/image'
-import styles from '../../styles/Home.module.css'
+import styles from './Transformando.module.css'
 
 const Transformando = (props) => {
     const ClickHandler = () =>{
@@ -15,7 +15,7 @@ const Transformando = (props) => {
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <h2>Transformando empresas</h2>
+                            <p className={styles.title}>TRASNSFORMANDO EMPRESAS</p>
                         </div>
                     </div>
                 </div>
@@ -29,8 +29,7 @@ const Transformando = (props) => {
                                     </div>
                                 </div>
                                 <div className="wpo-service-text">
-                                    <h2><Link onClick={ClickHandler} href='/service-single/[slug]' as={`/service-single/${service.slug}`}>{service.title}</Link></h2>
-                                    <p>{service.des}</p>
+                                    <p className={styles.text}>{service.title}</p>
                                 </div>
                             </div>
                         </div>

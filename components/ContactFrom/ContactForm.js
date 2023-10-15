@@ -98,7 +98,6 @@ const ContactForm = () => {
             <div className="submit-area">
                 <button type="submit" className="theme-btn">Submit Now</button>
             </div>
-            
         </form >
     )
 }

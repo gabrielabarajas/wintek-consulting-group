@@ -21,7 +21,7 @@ const Header = (props) => {
     
     const scrollTo = (selector) => {
         const { offsetTop } = document.querySelector(selector);
-        window.scrollTo({ top: offsetTop - 90, behavior: 'smooth' });
+        window.scrollTo({ top: offsetTop - 110, behavior: 'smooth' });
       }
 
     return (
@@ -54,16 +54,16 @@ const Header = (props) => {
                                             <Nav.Link onClick={() => scrollTo('#avancemosSec')} >Avancemos juntos</Nav.Link>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Nav.Link onClick={() => scrollTo('#bolgSec')} >Blog</Nav.Link>
+                                            <Nav.Link onClick={() => scrollTo('#blogSec')} >Blog</Nav.Link>
                                         </li>
-                                        <li><Nav.Link onClick={() => scrollTo('#adnSec')} >Contacto</Nav.Link></li>
+                                        <li><Nav.Link onClick={() => scrollTo('#contactSec')} >Contacto</Nav.Link></li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="close-form">
-                                        <Nav.Link onClick={() => scrollTo('#adnSec')} >Solicita Información</Nav.Link>
+                                        <Nav.Link className="btn theme-btn" onClick={() => scrollTo('#contactSec')} >Solicita Información</Nav.Link>
                                     </div>
                                 </div>
                             </div>

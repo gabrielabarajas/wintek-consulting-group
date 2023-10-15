@@ -10,7 +10,7 @@ const BlogSection = (props) => {
      }
 
     return(
-        <section className="wpo-blog-section section-padding">
+        <section id="blogSec" className="wpo-blog-section section-padding">
             <div className="container">
             <h1>Blog</h1>
                 <div className="row">

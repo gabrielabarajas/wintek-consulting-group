@@ -1,11 +1,12 @@
 import React from 'react'
-import Link from 'next/link'
-import abimg from '/public/images/about.jpg'
-import spimg1 from '/public/images/ab-shape-1.png'
-import spimg2 from '/public/images/ab-shape-2.png'
-import spicon from '/public/images/icon/badge.svg'
-import sign from '/public/images/signeture.png'
+import adnImage from '/public/images/gallery/adnImage.jpg'
 import Image from 'next/image'
+import styles from './adnSection.module.css'
+import adn1 from '/public/images/icon/adn1.png'
+import adn2 from '/public/images/icon/adn2.png'
+import adn3 from '/public/images/icon/adn3.png'
+import adn4 from '/public/images/icon/adn4.png'
+import adn5 from '/public/images/icon/adn5.png'
 
 
 const Adn = (props) => {
@@ -15,34 +16,46 @@ const Adn = (props) => {
     return(
         <section id="adnSec" className={`wpo-about-section ${props.abClass}`}>
             <div className="container">
-            <h1>ADN Wintek</h1>
+            <p className={styles.title}>ADN Wintek</p>
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-12">
                         <div className="wpo-about-wrap">
                         <div className="wpo-about-img">
-                            <Image src={abimg} alt=""/>
-                            <div className="wpo-ab-shape-1"><Image src={spimg1} alt=""/></div>
-                            <div className="wpo-ab-shape-2"><Image src={spimg2} alt=""/></div>
+                            <Image src={adnImage} alt=""/>
                         </div>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12">
                         <div className="wpo-about-text">
-                        <div className="wpo-about-icon">
-                            <div className="icon">
-                                <Image src={spicon} alt=""/>
-                            </div>
-                        </div>
+
                         <div className="wpo-about-icon-content">
-                            <h2>Professional And Dedicated <span>Consulting</span> Solutions</h2>
-                            <p>Management consulting includes a broad range of activities, and the many firms and their members often define these practices quite differently. One way to categorize the activities is in terms of the professional’s area of expertise (such as competitive analysis, corporate strategy, operations management, or human resources). But in practice, as many differences exist within these categories as between them.</p>
-                            <div className="signeture">
-                                <span><Image src={sign} alt=""/></span>
-                                <p>Robert William, CEO</p>
+                            <div className={styles.adnImgTxt}>
+                                <Image className={styles.adnImage} src={adn1} alt=""/>
+                                <p className={styles.text}>Garantizamos la cercanía y seguimiento con nuestros clientes.</p>
                             </div>
-                            <Link onClick={ClickHandler} href="/about" className="btn theme-btn" >More About</Link>
+
+                            <div className={styles.adnImgTxt}>
+                                <Image className={styles.adnImage} src={adn2} alt=""/>
+                                <p className={styles.text}>Fusionamos la mejor gestión técnica y del equipo.</p>
+                            </div>
+
+                            <div className={styles.adnImgTxt}>
+                                <Image className={styles.adnImage} src={adn3} alt=""/>
+                                <p className={styles.text}>Escuchamos activamente a cada uno de nuestros clientes.</p>
+                            </div>
+
+                            <div className={styles.adnImgTxt}>
+                                <Image className={styles.adnImage} src={adn4} alt=""/>
+                                <p className={styles.text}>Compartimos nuestra experiencia en diferentes industrias y paises.</p>
+                            </div>
+
+                            <div className={styles.adnImgTxt}>
+                                <Image className={styles.adnImage} src={adn5} alt=""/>
+                                <p className={styles.text}>Evolucionamos y crecemos de la mano de las empresas que asesoramos, para mantenernos a la vanguardia.</p>
+                            </div>
+                            
                         </div>
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div>

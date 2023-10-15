@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const Solicita = () => {
     return(
-        <section className="wpo-contact-pg-section section-padding">
+        <section id="contactSec" className="wpo-contact-pg-section section-padding">
             <div className="container">
             <h1>Comencemos a trabajar en tu proyecto</h1>
                 <div className="row">
