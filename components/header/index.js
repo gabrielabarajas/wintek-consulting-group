@@ -21,7 +21,7 @@ const Header = (props) => {
     
     const scrollTo = (selector) => {
         const { offsetTop } = document.querySelector(selector);
-        window.scrollTo({ top: offsetTop - 115, behavior: 'smooth' });
+        window.scrollTo({ top: offsetTop - 90, behavior: 'smooth' });
       }
 
     return (
@@ -51,19 +51,19 @@ const Header = (props) => {
                                         </li>
                                         <li><Nav.Link onClick={() => scrollTo('#adnSec')} >ADN Wintek</Nav.Link></li>
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} href="/">Avancemos juntos</Link>
+                                            <Nav.Link onClick={() => scrollTo('#avancemosSec')} >Avancemos juntos</Nav.Link>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} href="/">Blog</Link>
+                                            <Nav.Link onClick={() => scrollTo('#bolgSec')} >Blog</Nav.Link>
                                         </li>
-                                        <li><Link onClick={ClickHandler} href="/">Contacto</Link></li>
+                                        <li><Nav.Link onClick={() => scrollTo('#adnSec')} >Contacto</Nav.Link></li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="close-form">
-                                        <Link onClick={ClickHandler} className="theme-btn" href="/contact">Solicita Información</Link>
+                                        <Nav.Link onClick={() => scrollTo('#adnSec')} >Solicita Información</Nav.Link>
                                     </div>
                                 </div>
                             </div>

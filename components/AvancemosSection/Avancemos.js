@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const Avancemos = () => {
     return (
-        <section className="wpo-hero-section-1 wpo-hero-section-2" >
+        <section id="avancemosSec" className="wpo-hero-section-1 wpo-hero-section-2" >
             <div className="container">
             <h1>Avancemos Juntos</h1>
                 <div className="row">
