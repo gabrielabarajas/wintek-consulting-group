@@ -14,7 +14,7 @@ const Avancemos = () => {
       }
 
     return (
-        <section id="avancemosSec" className="wpo-hero-section-1 wpo-hero-section-2" >
+        <section id="avancemosSec" className="wpo-hero-section-1 wpo-hero-section-2">
             <div className="container">
             <p className={styles.title}>Avancemos Juntos</p>
                 <div className="row">

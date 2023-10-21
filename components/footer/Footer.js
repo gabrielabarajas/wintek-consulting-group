@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Logo from '/public/images/logo.png'
-import Projects from '../../api/project'
-import Services from '../../api/service'
 import Image from 'next/image'
 
 
@@ -19,14 +17,14 @@ const Footer = (props) => {
                     <div className="widget about-widget">
                         <div className="logo widget-title">
                             <Link onClick={ClickHandler} href="/">
-                                <Image src={Logo} alt="blog" />
+                                <Image src={Logo} alt="" />
                             </Link>
                         </div>
-                        <p>Management consulting includes a broad range of activities, and the many firms and their members often define these practices.</p>
+                        <p>Linea de texto disponible.</p>
                         <ul>
                             <li>
                                 <Link onClick={ClickHandler} href="/">
-                                    <i className="ti-twitter-alt"></i>
+                                    <i className="ti-linkedin"></i>
                                 </Link>
                             </li>
                             <li>
@@ -36,7 +34,7 @@ const Footer = (props) => {
                             </li>
                             <li>
                                 <Link onClick={ClickHandler} href="/">
-                                    <i className="ti-google"></i>
+                                    <i className="ti-facebook"></i>
                                 </Link>
                             </li>
                         </ul>
