@@ -1,7 +1,6 @@
 import React from 'react'
 import adnImage from '/public/images/gallery/adnImage.jpg'
 import Image from 'next/image'
-import ScrollAnimation from 'react-animate-on-scroll'
 import styles from './adnSection.module.css'
 import adn1 from '/public/images/icon/adn1.png'
 import adn2 from '/public/images/icon/adn2.png'
@@ -17,10 +16,7 @@ const Adn = (props) => {
     return(
         <section id="adnSec" className={`wpo-about-section ${props.abClass}`}>
             <div className="container">
-            <ScrollAnimation animateIn='flipInY'
-            animateOut='flipOutY'>
                 <p className={styles.title}>ADN Wintek</p>
-            </ScrollAnimation>
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-12">
                         <div className="wpo-about-wrap">
