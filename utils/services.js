@@ -1,11 +1,11 @@
 import { getSanityContent } from './cms';
 
 export const getArticles = (limit='') => getSanityContent({
-  query:`*[_type == "article"]${limit ? `[0..${limit}]` : ''} { title, date, reference, "imageUrl": image.asset->url, slug, author, publishedAt } | order(publishedAt desc)` ,
+  query:`*[_type == "article"]${limit ? `[0..${limit}]` : ''} { "categories": categories[]->{"title": category->title}, title, date, reference, "imageUrl": image.asset->url, slug, author, publishedAt } | order(publishedAt desc)` ,
 }).then((data) => data || []);
 
 export const getArticle = (slug) => getSanityContent({
-  query: '*[_type == "article" && slug.current == $slug] { categories, title, date, "bodyRaw":content, "imageUrl": image.asset->url, author, publishedAt }',
+  query: '*[_type == "article" && slug.current == $slug] { "categories": categories[]->{"title": category->title}, title, date, "bodyRaw":content, "imageUrl": image.asset->url, author, publishedAt }',
   variables: {
     slug,
   },

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import SimpleReactValidator from 'simple-react-validator';
-import { createContact } from '../../utils/server/contacts';
+import SimpleReactValidator from 'simple-react-validator'
+import { createContact } from '../../utils/server/contacts'
 
 const ContactForm = () => {
 
@@ -55,7 +55,7 @@ const ContactForm = () => {
                             name="fullname"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your Name" />
+                            placeholder="Nombre completo" />
                         {validator.message('fullname', forms.fullname, 'required|alpha_space')}
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const ContactForm = () => {
                             name="email"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your Email" />
+                            placeholder="correo electrónico" />
                         {validator.message('email', forms.email, 'required|email')}
                     </div>
                 </div>
@@ -79,7 +79,7 @@ const ContactForm = () => {
                             name="phone"
                             onBlur={(e) => changeHandler(e)}
                             onChange={(e) => changeHandler(e)}
-                            placeholder="Your phone" />
+                            placeholder="Teléfono de contacto" />
                         {validator.message('phone', forms.phone, 'required|phone')}
                     </div>
                 </div>
@@ -90,13 +90,13 @@ const ContactForm = () => {
                         value={forms.message}
                         type="text"
                         name="message"
-                        placeholder="Message">
+                        placeholder="Mensaje sobre el servicio de interés">
                     </textarea>
                     {validator.message('message', forms.message, 'required')}
                 </div>
             </div>
             <div className="submit-area">
-                <button type="submit" className="theme-btn">Submit Now</button>
+                <button type="submit" className="theme-btn">Enviar ahora</button>
             </div>
         </form >
     )

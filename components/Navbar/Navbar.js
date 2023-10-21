@@ -1,7 +1,7 @@
 import React from "react";
 import Header from '../header';
 
-export default function Navbar(props) {
+export default function Navbar({hclass}) {
   const [scroll, setScroll] = React.useState(0);
 
   const handleScroll = () => setScroll(document.documentElement.scrollTop);
@@ -15,7 +15,7 @@ export default function Navbar(props) {
 
   return (
     <div className={className}>
-        <Header hclass={props.hclass}/>
+        <Header hclass={hclass}/>
     </div>
   ); 
 }

@@ -1,47 +1,47 @@
 import React from 'react'
+import style from './BlogSection.module.css'
 import Link from 'next/link'
-import blogs from '../../api/blogs'
 import Image from 'next/image'
 
-const BlogSection = (props) => {
+const BlogSection = ({articles}) => {
     
     const ClickHandler = () =>{
         window.scrollTo(10, 0)
      }
+console.log(articles);
 
     return(
+
         <section id="blogSec" className="wpo-blog-section section-padding">
             <div className="container">
-            <h1>Blog</h1>
+            <p className={style.title}>Compartimos conocimiento</p>
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <h2>Compartimos conocimiento</h2>
+                            <p className={style.text}>Blog</p>
+                            <p className={style.smallText}>Nuestros artículos</p>
                         </div>
                     </div>
                 </div>
                 <div className="wpo-blog-items">
                     <div className="row">
-                         {blogs.map((blog, Bitem) => (
-                            <div className="col col-lg-4 col-md-6 col-12"  key={Bitem}>
+                         {articles.map((blog, index) => (
+                            <div className="col col-lg-4 col-md-6 col-12"  key={index}>
                                 <div className="wpo-blog-item">
-                                    <div className="wpo-blog-img">
-                                        <Image src={blog.screens} alt=""/>
+                                    <div className="wpo-blog-img" style={{position:"relative","aspect-ratio": "16/9"}}>
+                                        <Image style={{objectFit: 'cover'}}fill src={blog.imageUrl} alt="image from blog"/>
                                     </div>
                                     <div className="wpo-blog-content">
                                         <div className="wpo-blog-content-top">
                                             <div className="wpo-blog-thumb">
-                                                <span>{blog.tag}</span>
+                                                <span>{blog.category}</span>
                                             </div>
-                                            <h2><Link onClick={ClickHandler} href="/blog-single/[slug]" as={`/blog-single/${blog.slug}`}>{blog.title}</Link></h2>
+                                            <h2>{blog.title}</h2>
                                         </div>
                                         <div className="wpo-blog-content-btm">
                                             <div className="wpo-blog-content-btm-left">
-                                                <div className="wpo-blog-content-btm-left-img">
-                                                    <Image src={blog.authorImg} alt=""/>
-                                                </div>
                                                 <div className="wpo-blog-content-btm-left-text">
-                                                    <h4><Link onClick={ClickHandler} href="/blog-single/[slug]" as={`/blog-single/${blog.slug}`}>{blog.author}</Link></h4>
+                                                    <h4>{blog.author}</h4>
                                                     <span>{blog.authorTitle}</span>
                                                 </div>
                                             </div>
