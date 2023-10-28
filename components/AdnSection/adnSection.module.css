@@ -43,3 +43,16 @@
   .adnImgTxt{
     display:flex;
   }
+
+  @media only screen and (max-width : 900px) {
+    .title{
+        font-size: 2rem;
+        }
+    .text{
+      font-size: 1.6rem;
+    }
+    .adnImage{
+      width:60px;
+      height: 60px;
+    }
+}

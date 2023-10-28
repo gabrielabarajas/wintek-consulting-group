@@ -30,7 +30,6 @@
   .smallText{
     font-family: Everett;
     font-weight: 400;
-    color: #97ffb7;
     font-size: 1.6rem;
     line-height: 1;
   }
@@ -42,3 +41,12 @@
     text-align: left;
     line-height: 1.2;
   }
+
+  @media only screen and (max-width : 900px) {
+    .title{
+        font-size: 2rem;
+      }
+    .text{
+      font-size: 1.8rem;
+    }
+}
