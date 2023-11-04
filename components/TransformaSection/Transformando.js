@@ -20,14 +20,14 @@ const Transformando = (props) => {
                 </div>
                 <div className= {`row ${styles.transfContainer}`}>
                     {Services.map((service, sitem) => (
-                        <div className="col-lg-4 col-md-6 col-12" key={sitem}>
-                            <div className="wpo-service-item">
+                        <div className="col-md-2 col-md-6" key={sitem}>
+                            <div className={`wpo-service-item ${styles.boxService}`}>
                                 <div className="wpo-service-icon">
                                     <div className="icon">
                                         <Image src={service.sIcon} alt=""/>
                                     </div>
                                 </div>
-                                <div className="wpo-service-text">
+                                <div id={styles.boxService} className="wpo-service-text">
                                     <p className={styles.text}>{service.title}</p>
                                 </div>
                             </div>

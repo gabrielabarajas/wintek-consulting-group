@@ -40,6 +40,9 @@ text-align: left;
 line-height: 1.2;
 margin: 1.25rem;
 }
+.boxService{
+    height: 360px !important;
+}
 
 @media only screen and (max-width : 900px) {
     .title{

@@ -1,6 +1,5 @@
 import React from "react"
 import Nav from 'react-bootstrap/Nav';
-import VideoModal from '../../components/ModalVideo'
 import styles from './Avancemos.module.css'
 import avancemosImg from '/public/images/avancemos.jpg'
 import Image from "next/image"

@@ -41,15 +41,6 @@ const Footer = (props) => {
                     </div>
                 </div>
                 </div>
-            <div className="wpo-lower-footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col col-xs-12">
-                            <p className="copyright"> Copyright &copy; 2023 Wintek Consulting Group. All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </footer>
     )
 }
