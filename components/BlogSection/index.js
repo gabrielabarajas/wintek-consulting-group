@@ -14,12 +14,11 @@ console.log(articles);
 
         <section id="blogSec" className="wpo-blog-section section-padding">
             <div className="container">
-            <p className={style.title}>Compartimos conocimiento</p>
+            <p className={style.title}>Compartimos Conocimiento</p>
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <p className={style.text}>Blog</p>
-                            <p className={style.smallText}>Nuestros artículos</p>
+                            <p className={style.text}>Nuestros artículos</p>
                         </div>
                     </div>
                 </div>

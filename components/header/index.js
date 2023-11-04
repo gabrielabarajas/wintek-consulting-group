@@ -51,12 +51,12 @@ const Header = (props) => {
                                         </li>
                                         <li><Nav.Link onClick={() => scrollTo('#adnSec')} >ADN Wintek</Nav.Link></li>
                                         <li className="menu-item-has-children">
-                                            <Nav.Link onClick={() => scrollTo('#avancemosSec')} >Avancemos juntos</Nav.Link>
+                                            <Nav.Link onClick={() => scrollTo('#avancemosSec')} >Avancemos Juntos</Nav.Link>
                                         </li>
+                                        <li><Nav.Link onClick={() => scrollTo('#contactSec')} >Contacto</Nav.Link></li>
                                         <li className="menu-item-has-children">
                                             <Nav.Link onClick={() => scrollTo('#blogSec')} >Blog</Nav.Link>
                                         </li>
-                                        <li><Nav.Link onClick={() => scrollTo('#contactSec')} >Contacto</Nav.Link></li>
                                     </ul>
                                 </div>
                             </div>

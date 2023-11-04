@@ -20,7 +20,7 @@ const Footer = (props) => {
                                 <Image src={Logo} alt="" />
                             </Link>
                         </div>
-                        <p>Linea de texto disponible.</p>
+                        <p>info@wintek.consulting</p>
                         <ul>
                             <li>
                                 <Link onClick={ClickHandler} href="/">

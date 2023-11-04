@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Services from '../../api/service'
 import Image from 'next/image'
 import styles from './Transformando.module.css'
@@ -10,12 +9,12 @@ const Transformando = (props) => {
      }
 
     return(
-        <section className="wpo-service-section section-padding">
+        <section className={"wpo-service-section section-padding"}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <p className={styles.title}>TRASNSFORMANDO EMPRESAS</p>
+                            <p className={styles.title}>Transformando Empresas</p>
                         </div>
                     </div>
                 </div>

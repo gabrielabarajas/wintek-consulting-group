@@ -21,7 +21,9 @@ const Adn = (props) => {
                     <div className="col-lg-6 col-md-12 col-12">
                         <div className="wpo-about-wrap">
                         <div className="wpo-about-img" >
+                        <div className={styles.adnImgTxt}>
                             <Image src={adnImage} alt=""/>
+                        </div>
                         </div>
                         </div>
                     </div>

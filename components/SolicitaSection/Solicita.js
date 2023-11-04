@@ -8,13 +8,11 @@ const Solicita = () => {
     return(
         <section id="contactSec" className="wpo-contact-pg-section">
             <div className="container">
-            <p className={style.title}>Inicia tu camino al éxito</p>
+            <p className={style.title}>Inicia tu Camino al Éxito</p>
             <p className={style.text}>Comencemos a trabajar en tu proyecto</p>
+            <p className={style.smallText}>Ingresa tus datos y te contactaremos a la brevedad</p>
                 <div className="row">
                     <div className="col col-lg-10 offset-lg-1">
-                        <div className="wpo-contact-title">
-                            <p className={style.smallText}>Ingresa tus datos y te contactaremos a la brevedad</p>
-                        </div>
                         <div className="wpo-contact-form-area">
                             <ContactForm/>
                         </div>
@@ -28,7 +26,6 @@ const Solicita = () => {
             </section>
         </section>
      )
-        
 }
 
 export default Solicita;
