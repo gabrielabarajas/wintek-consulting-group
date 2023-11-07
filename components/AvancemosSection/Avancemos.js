@@ -31,8 +31,16 @@ const Avancemos = () => {
             </div>
             <div className="right-vec">
                 <div className="right-img">
-                    <div className="r-img">
+                    <div className="r-img row">
+                    <div className="col-lg-6 col-md-12 col-12">
+                        <div className="wpo-about-wrap">
+                        <div className="wpo-about-img" >
+                        <div className={styles.adnImgTxt}>
                         <Image src={avancemosImg} alt="" />
+                        </div>
+                        </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
