@@ -11,11 +11,12 @@ export default function Navbar({hclass}) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const className = scroll > 80 ? "fixed-navbar animated fadeInDown active" : "fixed-navbar";
-
   return (
-    <div className={className}>
+    <div style={{height: 85}}>
+       <div className="fixed-navbar active">
         <Header hclass={hclass}/>
+      </div>
     </div>
+   
   ); 
 }
