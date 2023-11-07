@@ -1,5 +1,4 @@
-import React from 'react'
-import Services from '../../api/service'
+import Services from './WintekServices'
 import Image from 'next/image'
 import styles from './Transformando.module.css'
 
