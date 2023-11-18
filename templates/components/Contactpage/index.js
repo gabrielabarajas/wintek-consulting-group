@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactForm from '../ContactFrom/ContactForm'
+import ContactForm from '../../../components/ContactFrom/ContactForm'
 
 import cnt1 from '/public/images/icon/home.svg'
 import cnt2 from '/public/images/icon/mail-2.svg'

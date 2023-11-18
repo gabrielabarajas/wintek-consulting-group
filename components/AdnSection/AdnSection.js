@@ -15,7 +15,7 @@ const Adn = (props) => {
      }
     return(
         <section id="adnSec" className={`wpo-about-section ${props.abClass}`}>
-            <div className="container">
+            <div className={`${styles.mainContainer} container`}>
                 <p className={styles.title}>ADN Wintek</p>
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-12">
@@ -55,9 +55,8 @@ const Adn = (props) => {
                                 <Image className={styles.adnImage} src={adn5} alt=""/>
                                 <p className={styles.text}>Evolucionamos y crecemos de la mano de las empresas que asesoramos, para mantenernos a la vanguardia.</p>
                             </div>
-                            
                         </div>
-                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

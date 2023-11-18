@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Solicita.module.css'
+import styles from './Solicita.module.css'
 import ContactForm from '../ContactFrom/ContactForm'
 
 
@@ -7,10 +7,10 @@ import ContactForm from '../ContactFrom/ContactForm'
 const Solicita = () => {
     return(
         <section id="contactSec" className="wpo-contact-pg-section">
-            <div className="container">
-            <p className={style.title}>Inicia tu Camino al Éxito</p>
-            <p className={style.text}>Comencemos a trabajar en tu proyecto</p>
-            <p className={style.smallText}>Ingresa tus datos y te contactaremos a la brevedad</p>
+            <div className={`${styles.mainContainer} container`}>
+            <p className={styles.title}>Inicia tu Camino al Éxito</p>
+            <p className={styles.text}>Comencemos a trabajar en tu proyecto</p>
+            <p className={styles.smallText}>Ingresa tus datos y te contactaremos a la brevedad</p>
                 <div className="row">
                     <div className="col col-lg-10 offset-lg-1">
                         <div className="wpo-contact-form-area">

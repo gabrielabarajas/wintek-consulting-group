@@ -18,36 +18,38 @@
     src: url("../../fonts/TWKEverett-Light.otf");
     font-weight:300;
   }
-
+.mainContainer{
+  padding-top: 2rem;
+}
 .title{
-    font-family: Everett;
-    font-weight: 700;
-    color: #b76ff0;
-    font-size: 3.4rem;
-    text-align: left;
-    line-height: 1.2;
-  }
-  .smallText{
-    font-family: Everett;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1;
-    align-text: left;
-  }
-  .text{
-    font-family: Everett;
-    font-weight: 400;
-    color: #272727;
-    font-size: 2rem;
-    text-align: left;
-    line-height: 1.2;
-  }
+  font-family: Everett;
+  font-weight: 700;
+  color: #b76ff0;
+  font-size: 3.4rem;
+  text-align: left;
+  line-height: 1.2;
+}
+.smallText{
+  font-family: Everett;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  align-text: left;
+}
+.text{
+  font-family: Everett;
+  font-weight: 400;
+  color: #272727;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 1.2;
+}
 
-  @media only screen and (max-width : 900px) {
-    .title{
-        font-size: 2rem;
-        }
-    .text{
-      font-size: 1.8rem;
-    }
+@media only screen and (max-width : 900px) {
+  .title{
+      font-size: 2rem;
+      }
+  .text{
+    font-size: 1.8rem;
+  }
 }

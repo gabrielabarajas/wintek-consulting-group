@@ -1,6 +1,5 @@
 import React from 'react'
-import style from './BlogSection.module.css'
-import Link from 'next/link'
+import styles from './BlogSection.module.css'
 import Image from 'next/image'
 
 const BlogSection = ({articles}) => {
@@ -12,13 +11,13 @@ console.log(articles);
 
     return(
 
-        <section id="blogSec" className="wpo-blog-section section-padding">
-            <div className="container">
-            <p className={style.title}>Compartimos Conocimiento</p>
+        <section id="blogSec" className="wpo-blog-section">
+            <div className={`${styles.mainContainer} container`}>
+            <p className={styles.title}>Compartimos Conocimiento</p>
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">
-                            <p className={style.text}>Nuestros artículos</p>
+                            <p className={styles.text}>Nuestros artículos</p>
                         </div>
                     </div>
                 </div>

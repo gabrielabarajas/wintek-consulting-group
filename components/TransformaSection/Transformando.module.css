@@ -18,10 +18,17 @@ font-family: Everett;
 src: url("../../fonts/TWKEverett-Light.otf");
 font-weight:300;
 }
+.mainContainer{
+padding-top: 2rem;
+padding-botomm: 0rem;
+}
+.colorSection{
+    background: radial-gradient(circle, rgba(151,255,183,1) 0%, rgba(108,244,218,0.40091646634615385) 100%)!important;
+}
 .transfContainer{
-    display: flex;
-    justify-content:center;
-    align-items: center;
+display: flex;
+justify-content:center;
+align-items: center;
 }
 .title{
 font-family: Everett;

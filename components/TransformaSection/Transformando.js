@@ -8,8 +8,8 @@ const Transformando = (props) => {
      }
 
     return(
-        <section className={"wpo-service-section section-padding"}>
-            <div className="container">
+        <section className={`${styles.colorSection} wpo-service-section`}>
+            <div className={`${styles.mainContainer} container`}>
                 <div className="row">
                     <div className="col-12">
                         <div className="wpo-section-title">

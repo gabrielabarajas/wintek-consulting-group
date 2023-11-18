@@ -21,7 +21,7 @@ const Header = (props) => {
     
     const scrollTo = (selector) => {
         const { offsetTop } = document.querySelector(selector);
-        window.scrollTo({ top: offsetTop - 110, behavior: 'smooth' });
+        window.scrollTo({ top: offsetTop - 80, behavior: 'smooth' });
       }
 
     return (
