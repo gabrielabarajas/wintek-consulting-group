@@ -27,7 +27,7 @@ const Adn = (props) => {
                         </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-12 col-12">
+                    <div className={`${styles.textSection} col-lg-6 col-md-12 col-12`}>
                         <div className="wpo-about-text">
 
                         <div className="wpo-about-icon-content">

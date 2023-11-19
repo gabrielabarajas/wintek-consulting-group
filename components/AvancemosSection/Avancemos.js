@@ -1,7 +1,7 @@
 import React from "react"
 import Nav from 'react-bootstrap/Nav';
 import styles from './Avancemos.module.css'
-import avancemosImg from '/public/images/avancemos.jpg'
+import avancemosImg from '/public/images/gallery/avancemos.jpg'
 import Image from "next/image"
 
 
@@ -18,7 +18,7 @@ const Avancemos = () => {
 
             <p className={styles.title}>Avancemos Juntos</p>
             <div className="row">
-            <div className="col-lg-6 col-md-12 col-12">
+            <div className={`${styles.textSection} col-lg-6 col-md-12 col-12`}>
             <div className="wpo-about-wrap">
                 <div className="wpo-about-text">
                         <p className={styles.text}>Implementamos, capacitamos, asesoramos y damos seguimiento a cada cliente para que tenga una integración de procesos exitosa en su compañía. </p>

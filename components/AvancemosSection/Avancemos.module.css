@@ -45,13 +45,18 @@
   font-size: 1.6rem;
   line-height: 1;
 }
+.textSection{
+  display: flex;
+  align-items: center;
+  }
 .text{
   font-family: Everett;
   font-weight: 400;
   color: #272727;
   font-size: 2rem;
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.6;
+  margin-bottom: 2.6rem;
 }
 
 @media only screen and (max-width : 900px) {

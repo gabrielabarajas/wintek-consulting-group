@@ -29,13 +29,17 @@ color: #b76ff0;
 font-size: 3.4rem;
 text-align: left;
 }
+.textSection{
+display: flex;
+align-items: center;
+}
 .text{
 font-family: Everett;
 font-weight: 400;
 color: #272727;
 font-size: 2rem;
 text-align: left;
-line-height: 1.2;
+line-height: 1.4;
 }
 .adnImage{
 width:80px;
@@ -45,6 +49,7 @@ margin: 1rem;
 }
 .adnImgTxt{
 display:flex;
+margin-bottom: 1rem;
 }
 
 @media only screen and (max-width : 900px) {
