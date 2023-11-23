@@ -7,6 +7,7 @@ const BlogSection = ({articles}) => {
     const ClickHandler = () =>{
         window.scrollTo(10, 0)
      }
+
 console.log(articles);
 
     return(
@@ -32,7 +33,7 @@ console.log(articles);
                                     <div className="wpo-blog-content">
                                         <div className="wpo-blog-content-top">
                                             <div className="wpo-blog-thumb">
-                                                <span>{blog.category}</span>
+                                                <span>{blog.date}</span>
                                             </div>
                                             <h2>{blog.title}</h2>
                                         </div>

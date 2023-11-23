@@ -8,22 +8,6 @@ import Nav from 'react-bootstrap/Nav';
 
 
 const Header = (props) => {
-
-    const [menuActive, setMenuState] = useState(false);
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
-
-    const ClickHandler = (e) => {
-        console.log(e);
-        window.scrollTo(200, 0);
-    }
-    
-    const scrollTo = (selector) => {
-        const { offsetTop } = document.querySelector(selector);
-        window.scrollTo({ top: offsetTop - 80, behavior: 'smooth' });
-      }
-
     return (
         <header id="header" className={props.hclass}>
             <HeaderTopbar/>
@@ -38,7 +22,7 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-3 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" href="/"><Image src={Logo}
+                                    <Link className="navbar-brand" href="/"><Image src={Logo}
                                         alt="" /></Link>
                                 </div>
                             </div>
@@ -47,15 +31,17 @@ const Header = (props) => {
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} href="/">Inicio</Link>
+                                            <Link href="/">Inicio</Link>
                                         </li>
-                                        <li><Nav.Link onClick={() => scrollTo('#adnSec')} >ADN Wintek</Nav.Link></li>
-                                        <li className="menu-item-has-children">
-                                            <Nav.Link onClick={() => scrollTo('#avancemosSec')} >Avancemos Juntos</Nav.Link>
+                                        <li>
+                                            <Link href="/?section=adnSec" >ADN Wintek</Link>
                                         </li>
-                                        <li><Nav.Link onClick={() => scrollTo('#contactSec')} >Contacto</Nav.Link></li>
                                         <li className="menu-item-has-children">
-                                            <Nav.Link onClick={() => scrollTo('#blogSec')} >Blog</Nav.Link>
+                                            <Link href="/?section=avancemosSec" >Avancemos Juntos</Link>
+                                        </li>
+                                        <li><Link href="/?section=contactSec" >Contacto</Link></li>
+                                        <li className="menu-item-has-children">
+                                            <Link href="/?section=blogSec" >Blog</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -63,7 +49,7 @@ const Header = (props) => {
                             <div className="col-lg-3 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="close-form">
-                                        <Nav.Link className="btn theme-btn" onClick={() => scrollTo('#contactSec')} >Solicita Información</Nav.Link>
+                                        <Link className="btn theme-btn" href="/?section=contactSec" >Solicita Información</Link>
                                     </div>
                                 </div>
                             </div>

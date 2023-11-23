@@ -13,6 +13,9 @@ import "slick-carousel/slick/slick-theme.css";
 //import 'photoswipe/dist/photoswipe.css'
 import '../styles/sass/style.scss'
 import Head from "next/head";
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/footer/Footer'
+import Scrollbar from '../components/scrollbar/scrollbar'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -20,7 +23,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Wintek Consulting Group</title>
       </Head>
+      <Navbar hclass={'topbar-none'} />
       <Component {...pageProps} />
+      <Footer/>
+      <Scrollbar/>
       <ToastContainer />
     </div>
 

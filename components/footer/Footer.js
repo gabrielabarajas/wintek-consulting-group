@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Logo from '/public/images/logo.png'
 import Image from 'next/image'
+import styles from './Footer.module.css'
 
 
 const Footer = (props) => {
@@ -20,7 +21,7 @@ const Footer = (props) => {
                                 <Image src={Logo} alt="" />
                             </Link>
                         </div>
-                        <p>info@wintek.consulting</p>
+                        <a className={styles.textLink}href="mailto:info@wintek.consulting">info@wintek.consulting</a>
                         <ul>
                             <li>
                                 <Link onClick={ClickHandler} href="/">

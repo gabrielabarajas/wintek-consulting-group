@@ -1,54 +1,42 @@
 import React, { Fragment, useState } from 'react';
-import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import Collapse from "@mui/material/Collapse";
 import Link from "next/link";
 
 const menus = [
     {
         id: 1,
         title: 'Inicio',
-        link: '/',
+        link: '/?section=inicio',
     },
 
     {
         id: 2,
         title: 'ADN Wintek',
-        link: '#adnSec',
+        link: '/?section=adnSec',
     },
     {
         id: 3,
         title: 'Avancemos juntos',
-        link: '#avancemosSec',
+        link: '/?section=avancemosSec',
     },
     {
         id: 4,
         title: 'Blog',
-        link: '#blogSec',
+        link: '/?section=blogSec',
     },
 
     {
         id: 5,
         title: 'Solicita Información',
-        link: '#contactSec',
+        link: '/?section=contactSec',
     }
 ]
 
 
 const MobileMenu = () => {
-
     const [openId, setOpenId] = useState(0);
     const [menuActive, setMenuState] = useState(false);
-
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    }
-
-    const scrollTo = (selector) => {
-        const { offsetTop } = document.querySelector(selector);
-        window.scrollTo({ top: offsetTop - 110, behavior: 'smooth' });
-      }
-
+    
     return (
         <div>
             <div style={{background:"#b76ff0"}} className={`mobileMenu ${menuActive ? "show" : ""}`}>
@@ -60,28 +48,7 @@ const MobileMenu = () => {
                     {menus.map((item, mn) => {
                         return (
                             <ListItem className={item.id === openId ? 'active' : null}  key={mn}>
-                                {item.submenu ?
-                                    <Fragment>
-                                        <p onClick={() => setOpenId(item.id === openId ? 0 : item.id)}>{item.title}
-                                          <i className={item.id === openId ? 'fa fa-angle-up' : 'fa fa-angle-down'}></i>
-                                        </p>
-                                        <Collapse in={item.id === openId} timeout="auto" unmountOnExit>
-                                            <List className="subMenu">
-                                                <Fragment>
-                                                    {item.submenu.map((submenu, i) => {
-                                                        return (
-                                                            <ListItem key={i}>
-                                                                <Link onClick={() => scrollTo('#contactSec')} className="active">{submenu.title}</Link>
-                                                            </ListItem>
-                                                        )
-                                                    })}
-                                                </Fragment>
-                                            </List>
-                                        </Collapse>
-                                    </Fragment>
-                                    : <Link className='active'
-                                        href={item.link}>{item.title}</Link>
-                                }
+                                <Link className='active' onClick={() => setMenuState(false)} href={item.link}>{item.title}</Link>
                             </ListItem>
                         )
                     })}

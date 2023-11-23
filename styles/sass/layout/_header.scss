@@ -4,7 +4,10 @@
 
 
 /*-- 2.1 topbar --*/
-
+.navbar-brand {
+	width: 140px !important;
+	display: block;
+}
 .topbar {
 	background: #b76ff0;
 	padding: 0 130px;
@@ -1146,7 +1149,7 @@
 @media(max-width: 440px) {
 	.wpo-site-header .navbar-header .navbar-brand {
 		img {
-			max-width: 170px;
+			max-width: 120px;
 		}
 	}
 }

@@ -9,11 +9,8 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 const ErrorPage =() => {
     return(
         <Fragment>
-            <Navbar/>
             <PageTitle pageTitle={'404'} pagesub={'404'}/> 
             <Error/>
-            <Footer/>
-            <Scrollbar/>
         </Fragment>
     )
 };
