@@ -37,19 +37,27 @@ align-items: center;
 font-family: Everett;
 font-weight: 400;
 color: #272727;
-font-size: 2rem;
+margin: 1rem;
+font-size: 1.6rem;
 text-align: left;
 line-height: 1.4;
+float: left;
+display: inline-block;
 }
 .adnImage{
 width:80px;
 height: 80px;
 object-fit: contain;
 margin: 1rem;
+align-items:center;
+float: left;
+display: inline-block;
 }
 .adnImgTxt{
 display:flex;
 margin-bottom: 1rem;
+overflow: hidden;
+width: 100%;
 }
 
 @media only screen and (max-width : 900px) {
@@ -57,7 +65,7 @@ margin-bottom: 1rem;
       font-size: 2rem;
       }
   .text{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .adnImage{
     width:60px;

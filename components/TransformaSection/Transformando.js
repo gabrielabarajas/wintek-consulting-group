@@ -2,7 +2,7 @@ import Services from './WintekServices'
 import Image from 'next/image'
 import styles from './Transformando.module.css'
 
-const Transformando = (props) => {
+const Transformando = () => {
     const ClickHandler = () =>{
         window.scrollTo(10, 0);
      }

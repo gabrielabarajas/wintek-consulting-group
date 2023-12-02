@@ -9,12 +9,12 @@ import adn4 from '/public/images/icon/adn4.png'
 import adn5 from '/public/images/icon/adn5.png'
 
 
-const Adn = (props) => {
+const Adn = () => {
     const ClickHandler = () =>{
         window.scrollTo(10, 0);
      }
     return(
-        <section id="adnSec" className={`wpo-about-section ${props.abClass}`}>
+        <section id="adnSec" className= "wpo-about-section" >
             <div className={`${styles.mainContainer} container`}>
                 <p className={styles.title}>ADN Wintek</p>
                 <div className="row">
