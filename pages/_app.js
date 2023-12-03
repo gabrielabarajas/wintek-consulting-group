@@ -10,7 +10,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-//import 'photoswipe/dist/photoswipe.css'
 import '../styles/sass/style.scss'
 import Head from "next/head";
 import Navbar from '../components/Navbar/Navbar'

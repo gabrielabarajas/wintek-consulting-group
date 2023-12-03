@@ -1,0 +1,6 @@
+.vid {
+    height: 90vh;
+}  
+.vid video {
+  height: 100%;
+}

@@ -6,6 +6,7 @@ import Adn from '../components/AdnSection/AdnSection'
 import Solicita from '../components/SolicitaSection/Solicita';
 import { getArticles } from '../utils/services';
 import BlogSection from '../components/BlogSection'
+import BannerSection from '../components/Banner/BannerSection';
 
 const HomePage = ({articles}) => {
     const router = useRouter();
@@ -21,6 +22,7 @@ const HomePage = ({articles}) => {
 
     return (
         <Fragment>
+            <BannerSection/>
             <Transformando/>
             <Adn/>
             <Avancemos/>
