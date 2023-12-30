@@ -1,7 +1,7 @@
 import { db, collection, addDoc, serverTimestamp } from './database';
 
 const createEmail = (contact) => ({
-  to: ['lopez.avila.marc@gmail.com'],
+  to: ['jemerinoarango@hotmail.com'],
   message: {
     subject: 'New contact from: '+ contact.fullname,
     text: contact.email + '-' + contact.phone,
