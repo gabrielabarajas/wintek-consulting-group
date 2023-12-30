@@ -24,18 +24,13 @@ const Footer = (props) => {
                         <a className={styles.textLink}href="mailto:info@wintek.consulting">info@wintek.consulting</a>
                         <ul>
                             <li>
-                                <Link onClick={ClickHandler} href="/">
+                                <Link onClick={ClickHandler} href=" https://www.linkedin.com/company/wintek-consulting-group/">
                                     <i className="ti-linkedin"></i>
                                 </Link>
                             </li>
                             <li>
                                 <Link onClick={ClickHandler} href="/">
                                     <i className="ti-instagram"></i>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link onClick={ClickHandler} href="/">
-                                    <i className="ti-facebook"></i>
                                 </Link>
                             </li>
                         </ul>
