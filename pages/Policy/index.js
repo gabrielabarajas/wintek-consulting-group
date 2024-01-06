@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import PageTitle from '../../components/PageTitle/PageTitle'
+import PageTitle from './page-title/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import PrivatePolicy from '../../components/PrivatePolicy/PrivatePolicy';
 
