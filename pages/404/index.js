@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import PageTitle from '../../components/Pagetitle/PageTitle'
+import PageTitle from '../../components/page-title/PageTitle'
 import Error from '../../components/404'
 
 
