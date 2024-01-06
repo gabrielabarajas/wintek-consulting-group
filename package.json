@@ -36,7 +36,7 @@
     "sass": "^1.54.4",
     "simple-react-validator": "^1.5.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^5.3.6"
+    "styled-components": "^6.1.6"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "1.8.3"
