@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import bannerImage from '../../public/images/Bannervideo2.svg';
+import bannerImage from '../../public/images/selected-banner.svg';
 
 
 function BannerSection() {
