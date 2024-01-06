@@ -1,11 +1,7 @@
 import React, {Fragment} from 'react';
-import Navbar from '../../components/Navbar/Navbar'
-import PageTitle from '../../components/Pagetitle/PageTitle'
-import Footer from '../../components/Footer/Footer'
+import PageTitle from '../../components/PageTitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import PrivatePolicy from '../../components/PrivatePolicy/PrivatePolicy';
-
-
 
 const PolicyPage =() => {
     return(
@@ -16,4 +12,5 @@ const PolicyPage =() => {
         </Fragment>
     )
 };
+
 export default PolicyPage;
